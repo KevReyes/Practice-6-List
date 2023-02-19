@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="javascript.s"></script>
+    <link rel="stylesheet" href="w6.css">
+</head>
+<body>
+    <div id="test"></div>
+
+<div>
+    	<input type="button" value="reset" onclick="clearList()">
+
+<p>Sorry, I am unable to find that birds, but this is what I got</p>
+<table>
+	<tr>
+<td><img src="bird1.jpg" width="3456px" height="5184px"></td>
+<td><img src="bird2.jpg" width="2712px" height="4068px"></td>
+<td><img src="bird3.jpg" width="4715px" height="4050px"></td>
+	</tr>
+</table>
+<img src="bird4.jpg" width="5000px" height="3333px">
+</div>
+
+	<script>
+// The prompt for the user is 4 differnt bird species. 4 is an abritary number.
+// You can ask the user to enter any amount
+var arrBird = [];
+
+for (var i=0; i<4; i++){
+	//add the bird species the user entered in the JavaScript prompt to the array
+    arrBird.push(prompt("Enter four different bird Species: ", ""));
+}
+//Sort the array of birds alphabetically
+arrBird.sort();
+
+//loop throughthe contents of the array and display them on the div
+for(var i=0; i<arrBird.length; i++){
+    document.getElementById("test").innerHTML += arrBird[i] + "<BR>";
+}
+
+
+//clear the brids from the div
+function clearList(){
+	document.getElementById("test").innerHTML= "";
+}
+
+
+</script>
+
+
+</body>
+</html>

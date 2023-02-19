@@ -1,0 +1,29 @@
+body{
+    background: linear-gradient(to bottom,  #4de94c, #3783ff);
+
+} 
+
+img{
+    height: 498px;
+    width: auto;
+    border: 0px;
+}
+
+
+div{
+	width; 120px;
+	height: 120px;
+    text-align: center;
+	color: #ffffff;
+	font-size: 25px;
+}
+
+p{
+	color: #ffffff;
+	font-size: 25px;
+}
+
+a{
+	color: #ffffff;
+	padding: 10px;
+}
